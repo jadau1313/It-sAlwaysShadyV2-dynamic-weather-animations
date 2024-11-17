@@ -16,7 +16,7 @@ document.getElementById("search-button").addEventListener('click', ()=>{
 //event listener for add to favorites
 document.getElementById("add-favorite").addEventListener('click', async ()=>{
     const city = document.getElementById("city-search").value; //city from input
-    const apiKey = '0e969786c3490fcfbe4dbec40ae9ec84';
+    const apiKey = 'Your API key';
     const url = `http://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`;
     try{
         const response = await fetch(url);
@@ -73,7 +73,7 @@ async function fetchWeatherData(city) {
 }*/
 
 async function fetchWeatherData(city){
-    const apiKey = '0e969786c3490fcfbe4dbec40ae9ec84';
+    const apiKey = 'Your API key';
     const url = `http://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`;
     try{
         const response = await fetch(url);
