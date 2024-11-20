@@ -189,7 +189,7 @@ function updateWeatherDisplay(weather, isNight){
     } else if (weatherLower.includes('snow')) {
         snow.style.display = 'block';
         clouds.forEach(cloud => cloud.classList.add('dark'));
-    } else if (weatherLower.includes('cloudy')) {
+    } else if (weatherLower.includes('cloudy') || weatherLower.includes('overcast')) {
         clouds.forEach(cloud => cloud.classList.add('dark'));
     }
     // Add more conditions as needed
