@@ -129,7 +129,7 @@ function createSnow() {
     
     const numRaindrops = 100; // Number of raindrops, adjust as needed
     for (let i = 0; i < numRaindrops; i++) {
-      const rand = getRand(3.2, 5.4)
+      const rand = getRand(3.2, 5.4);
       const raindrop = document.createElement('div');
       raindrop.classList.add('raindrop');
       raindrop.style.display = 'block';
